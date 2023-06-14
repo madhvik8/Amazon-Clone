@@ -11,11 +11,17 @@ function Checkout() {
         <img className='checkout__ad' src={checkimg} alt=""/>
 
         <div>
-          <h2 className='checkout__title'>Your Shopping Basket</h2>
+          <h2 className='checkout__title'>Your Shopping Cart</h2>
+          {/* BasketItem */}
+          {/* BasketItem */}
+          {/* BasketItem */}
+          {/* BasketItem */}
+          {/* BasketItem */}
         </div>
          </div>
+
          <div className='checkout__right'>
-          <Subtotal />
+          {/* <Subtotal/> */}
          </div>
       </div>
   )
