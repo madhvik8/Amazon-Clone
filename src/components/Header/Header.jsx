@@ -1,15 +1,20 @@
-import React from 'react'
+import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Header.css';
-import main_logo from '../../Assets/img1.jpg'
-import { Link } from "react-router-dom";
+import main_logo from '../../Assets/img1.jpg';
+import { NavLink } from "react-router-dom";
+import { useState } from "../StateProvider/Stateprovider";
+
 function Header() {
+  const[{ basket, user }, dispatch] = useState();
+
   return (
     <div className="header">
-      <Link to='/'>
+      <NavLink to='/'>
       <img className="header__logo" src={main_logo} alt=""/>
-      </Link>
+      </NavLink>
+
       <div className="header__search">
         <input className="header__searchInput" type="text" />
         <SearchIcon className="header__searchIcon" />
@@ -33,14 +38,14 @@ function Header() {
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>
         </div>
-        <Link to="/checkout">
+        <NavLink to="/checkout">
         <div className="header__optionBasket">
             <ShoppingCartIcon />cart
             <span className="header__optionLineTwo header__basketCount">
               0
             </span>
           </div>
-        </Link>
+        </NavLink>
         </div>
     </div>
   );
