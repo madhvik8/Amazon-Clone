@@ -1,9 +1,9 @@
 import React from "react";
 import "./Product.css";
-import { useState } from "../StateProvider/Stateprovider";
+import { useStateValue } from "../StateProvider/Stateprovider";
 
 function Product({ id, title, image, price, rating }) {
-  const [{ basket }, dispatch] = useState();
+  const [{ basket }, dispatch] = useStateValue();
 
   console.log("this is the basket >>>", basket);
 

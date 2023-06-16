@@ -4,10 +4,10 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Header.css";
 import main_logo from "../../Assets/img1.jpg";
 import { NavLink } from "react-router-dom";
-import { useState } from "../StateProvider/Stateprovider";
+import { useStateValue } from "../StateProvider/Stateprovider";
 
 function Header() {
-  const [{ basket, user }, dispatch] = useState();
+  const [{ basket, user }, dispatch] = useStateValue();
 
   return (
     <div className="header">
@@ -39,7 +39,7 @@ function Header() {
           <div className="header__optionBasket">
             <ShoppingCartIcon />
             cart
-            <span className="header__optionLineTwo header__basketCount">0</span>
+            <span className="header__optionLineTwo header__basketCount">{basket?.length}</span>
           </div>
         </NavLink>
       </div>

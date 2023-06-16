@@ -9,19 +9,20 @@ function Checkout() {
     <div className="checkout">
       <div className='checkout__left'>
         <img className='checkout__ad' src={checkimg} alt=""/>
-
+ 
         <div>
           <h2 className='checkout__title'>Your Shopping Cart</h2>
-          {/* BasketItem */}
-          {/* BasketItem */}
-          {/* BasketItem */}
-          {/* BasketItem */}
-          {/* BasketItem */}
+          {/* CheckoutProduct */}
+          {/* CheckoutProduct */}
+          {/* CheckoutProduct */}
+          {/* CheckoutProduct */}
+          {/* CheckoutProduct */}
+           
         </div>
          </div>
 
          <div className='checkout__right'>
-          {/* <Subtotal/> */}
+          <Subtotal/> 
          </div>
       </div>
   )
