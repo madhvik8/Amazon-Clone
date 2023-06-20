@@ -21,19 +21,13 @@ function Checkout() {
           <CheckoutProduct
           id={item.id}
           title={item.title}
-          image={image.title}
+          image={item.image}
           price={item.price}
           rating={item.rating}
           />
         })}
-
-          {/* CheckoutProduct */}
-          {/* CheckoutProduct */}
-          {/* CheckoutProduct */}
-          {/* CheckoutProduct */}
-          {/* CheckoutProduct */}
-           
-        </div>
+         
+          </div>
       
          </div>
 
