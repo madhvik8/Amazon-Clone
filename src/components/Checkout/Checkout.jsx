@@ -12,18 +12,19 @@ function Checkout() {
   return (
     <div className="checkout">
       <div className='checkout__left'>
-        <img className='checkout__ad' src={checkimg} alt=""/>
+        <img className='checkout__ad' src={checkimg} alt=""
+        />
  
         <div>
-          <h2 className='checkout__title'>Your Shopping Cart</h2>
+          <h2 className='checkout__title'>Your Shopping Cart </h2>
 
           {basket.map(item => {
           <CheckoutProduct
-          id={item.id}
-          title={item.title}
-          image={item.image}
-          price={item.price}
-          rating={item.rating}
+           id={item.id}
+           title={item.title}
+           image={item.image}
+           price={item.price}
+           rating={item.rating}
           />
         })}
          
@@ -31,7 +32,7 @@ function Checkout() {
       
          </div>
 
-         <div className='checkout__right'>
+         <div className="checkout__right">
           <Subtotal/> 
          </div>
       </div>
